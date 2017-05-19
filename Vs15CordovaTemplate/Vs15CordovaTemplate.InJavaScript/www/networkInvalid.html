@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>网络连接异常</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script>
+        // document->DOMContentLoaded: 当前文档（不包含当前文档依赖的样式、脚本、图片和其它媒体资源）加载完成
+        // window->load: 当前文档及其依赖的所有媒体资源都加载完成
+        window.addEventListener('load', onLoad, false);
+
+        function onLoad() {
+            alert('loaded');
+            document.addEventListener('deviceready', onDeviceReady, false);
+        }
+
+        function onDeviceReady() {
+            alert('device ready');
+
+            if (StatusBar && navigator.splashscreen) {
+                StatusBar.overlaysWebView(true);
+                navigator.splashscreen.hide();
+            }
+            else {
+                alert('cordova is not accessable');
+            }
+        }
+    </script>
+    <style>
+        .body{
+            padding-top:25px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>请连接到您的移动网络或Wi-Fi。</h1>
+</body>
+</html>
