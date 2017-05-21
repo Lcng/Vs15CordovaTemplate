@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.lcng.testphonegap1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
-  <name>Vs15CordovaTemplate.InJavaScript</name>
+<widget id="com.lcng.Vs15CordovaTemplate.InJavaScript" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
+  <name>人口关联采集系统</name>
   <description>
     Splash Screen + Translucent Status Bar + Remote APP
   </description>
-  <author email="support@phonegap.com" href="http://phonegap.com">
+  <author email="294867413@qq.com" href="294867413@qq.com">
     Lcng
   </author>
   <content src="index.html" />
@@ -30,7 +30,6 @@
     <preference name="ShowSplashScreenSpinner"    value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
   </plugin>
-  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.3.3"/>
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.2.3" />
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
   <plugin name="cordova-plugin-remote-injection" source="npm" spec="~0.5.2"></plugin>
