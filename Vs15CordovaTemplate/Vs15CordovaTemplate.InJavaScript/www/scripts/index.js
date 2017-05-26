@@ -34,7 +34,7 @@
     loadApp: function () {
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
-            window.location.replace('http://192.168.1.122:3676/');
+            window.location.replace('http://192.168.1.102:6061/');
         }
         else {
             window.location.replace('networkInvalid.html');
