@@ -21,6 +21,7 @@
     receivedEvent: function (id) {
         app.showStatusBar();
         app.loadApp();
+        app.listenKeyboardEvents();
     },
     showStatusBar: function () {
         if (StatusBar.show) {
@@ -48,5 +49,13 @@
         }
 
         return true;
+    },
+    listenKeyboardEvents: function () {
+        window.addEventListener('native.keyboardshow', function (e) {
+            setTimeout(function () {
+                alert(111);
+                document.activeElement.scrollIntoViewIfNeeded();
+            }, 100);
+        });
     }
 };

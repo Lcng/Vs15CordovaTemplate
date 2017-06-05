@@ -17,7 +17,6 @@
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="21" />
-  <preference name="fullscreen" value="false" />
   <!--<preference name="Fullscreen" value="true" />-->
   <!--启动时非全屏，启动后是全屏-->
 
@@ -34,6 +33,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.2.3" />
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
   <plugin name="cordova-plugin-remote-injection" source="npm" spec="~0.5.2"></plugin>
+  <plugin name="ionic-plugin-keyboard" source="npm" spec="~2.2.1"></plugin>
 
   <platform name="android">
     <!--不考虑横屏-->
