@@ -16,12 +16,21 @@
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
+
+        window.addEventListener('native.hidekeyboard', keyboardHideHandler);
+        window.addEventListener('native.showkeyboard', keyboardShowHandler);
+        function keyboardHideHandler(e) {
+            alert('Goodnight, sweet prince');
+        }
+        function keyboardShowHandler(e) {
+            alert('Keyboard height is: ' + e.keyboardHeight);
+            
+        }
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         app.showStatusBar();
         app.loadApp();
-        app.listenKeyboardEvents();
     },
     showStatusBar: function () {
         if (StatusBar.show) {
@@ -49,13 +58,5 @@
         }
 
         return true;
-    },
-    listenKeyboardEvents: function () {
-        window.addEventListener('native.keyboardshow', function (e) {
-            setTimeout(function () {
-                alert(111);
-                document.activeElement.scrollIntoViewIfNeeded();
-            }, 100);
-        });
     }
 };
