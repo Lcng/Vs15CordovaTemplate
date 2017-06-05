@@ -17,6 +17,7 @@
   </config-file>
   <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="21" />
+  <preference name="fullscreen" value="false" />
   <!--<preference name="Fullscreen" value="true" />-->
   <!--启动时非全屏，启动后是全屏-->
 
