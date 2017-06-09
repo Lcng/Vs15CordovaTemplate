@@ -10,8 +10,8 @@
   <content src="index.html" />
   <!--<content src="https://m.baidu.com" />-->
   <config-file platform="android" parent="/manifest" mode="merge">
-    <application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>
-    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>-->
+    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
+    <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>
     <!--<application android:theme="@android:style/Theme.NoDisplay"></application>-->
     <!--没有主题，应用程序无法显示-->
   </config-file>
