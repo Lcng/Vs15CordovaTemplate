@@ -16,16 +16,6 @@
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-
-        window.addEventListener('native.hidekeyboard', keyboardHideHandler);
-        window.addEventListener('native.showkeyboard', keyboardShowHandler);
-        function keyboardHideHandler(e) {
-            alert('Goodnight, sweet prince');
-        }
-        function keyboardShowHandler(e) {
-            alert('Keyboard height is: ' + e.keyboardHeight);
-            
-        }
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {

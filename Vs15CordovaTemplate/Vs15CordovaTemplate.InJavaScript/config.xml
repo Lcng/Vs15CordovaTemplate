@@ -10,8 +10,8 @@
   <content src="index.html" />
   <!--<content src="https://m.baidu.com" />-->
   <config-file platform="android" parent="/manifest" mode="merge">
-    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>-->
-    <application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>
+    <application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>
+    <!--<application android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></application>-->
     <!--<application android:theme="@android:style/Theme.NoDisplay"></application>-->
     <!--没有主题，应用程序无法显示-->
   </config-file>
@@ -33,7 +33,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.2.3" />
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
   <plugin name="cordova-plugin-remote-injection" source="npm" spec="~0.5.2"></plugin>
-  <plugin name="ionic-plugin-keyboard" source="npm" spec="~2.2.1"></plugin>
+  <!--<plugin name="ionic-plugin-keyboard" source="npm" spec="~2.2.1"></plugin>-->
 
   <platform name="android">
     <!--不考虑横屏-->
