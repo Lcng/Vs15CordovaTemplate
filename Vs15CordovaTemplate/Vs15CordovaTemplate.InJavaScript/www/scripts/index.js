@@ -34,7 +34,8 @@
     loadApp: function () {
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
-            window.location.replace('http://192.168.1.252:8085/');
+            //window.location.replace('http://192.168.1.252:8085/');
+            window.location.replace('http://m.baidu.com');
         }
         else {
             window.location.replace('networkInvalid.html');
