@@ -23,19 +23,22 @@
         app.loadApp();
     },
     showStatusBar: function () {
-        if (StatusBar.show) {
+        return;
+        if (StatusBar && StatusBar.show) {
             StatusBar.show();
         }
 
-        if (StatusBar.overlaysWebView) {
+        if (StatusBar && StatusBar.overlaysWebView) {
             StatusBar.overlaysWebView(true);
         }
     },
     loadApp: function () {
+        alert(1);
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
+            alert(2);
             //window.location.replace('http://192.168.1.252:8085/');
-            window.location.replace('http://m.baidu.com');
+            window.location.replace('http://m.baidu.com/');
         }
         else {
             window.location.replace('networkInvalid.html');
