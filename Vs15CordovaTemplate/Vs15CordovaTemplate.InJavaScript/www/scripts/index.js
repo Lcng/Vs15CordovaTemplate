@@ -15,6 +15,7 @@
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
+        navigator.splashscreen.hide();
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -33,10 +34,8 @@
         }
     },
     loadApp: function () {
-        alert(1);
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
-            alert(2);
             //window.location.replace('http://192.168.1.252:8085/');
             window.location.replace('http://m.baidu.com/');
         }
