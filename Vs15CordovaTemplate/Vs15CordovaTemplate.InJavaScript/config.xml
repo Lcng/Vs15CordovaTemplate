@@ -15,7 +15,6 @@
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
   <!--splash screen-->
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
-  <preference name="AutoHideSplashScreen" value="false" />
   <preference name="FadeSplashScreenDuration" value="0"/>
   <preference name="SplashScreenDelay" value="0"/>
   <platform name="android">
@@ -38,6 +37,7 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <platform name="ios">
+    <preference name="AutoHideSplashScreen" value="false" />
     <!-- iOS 8.0+ -->
     <!-- iPhone 6 Plus  -->
     <icon src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
