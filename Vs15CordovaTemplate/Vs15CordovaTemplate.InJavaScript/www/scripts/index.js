@@ -34,7 +34,7 @@
     loadApp: function () {
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
-            window.location.replace('http://192.168.0.104:12552/');
+            window.location.replace('http://www.gzjkfw.com:9998/');
         }
         else {
             window.location.replace('networkInvalid.html');
