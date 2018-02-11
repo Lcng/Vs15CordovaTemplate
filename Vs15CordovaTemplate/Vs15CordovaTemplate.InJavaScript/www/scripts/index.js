@@ -35,7 +35,7 @@
     loadApp: function () {
         var isNetworkValid = app.checkConnection();
         if (isNetworkValid == true) {
-            window.location.replace('http://www.gzjkfw.com:9998/');
+            window.location.replace('https://www.baidu.com');
         }
         else {
             window.location.replace('networkInvalid.html');
