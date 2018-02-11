@@ -9,7 +9,6 @@
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.addEventListener('backbutton', this.onBackbutton, false);
     },
     // deviceready Event Handler
     //
@@ -22,6 +21,7 @@
     receivedEvent: function (id) {
         app.showStatusBar();
         app.loadApp();
+        document.addEventListener('backbutton', this.onBackbutton, false);
     },
     showStatusBar: function () {
         if (StatusBar.show) {
