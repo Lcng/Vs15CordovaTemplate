@@ -20,7 +20,7 @@
   <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
   <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1">
     <preference name="SplashScreen" value="splash" />
-    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="0" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreen" value="false" />
