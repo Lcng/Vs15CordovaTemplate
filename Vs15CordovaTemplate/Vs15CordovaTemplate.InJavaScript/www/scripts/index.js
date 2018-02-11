@@ -16,6 +16,7 @@
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
+        document.addEventListener('backbutton', this.onBackbutton, false);
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -48,5 +49,8 @@
         }
 
         return true;
+    },
+    onBackbutton: function () {
+        alert(23423);
     }
 };
