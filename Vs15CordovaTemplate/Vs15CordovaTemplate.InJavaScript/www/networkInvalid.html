@@ -25,6 +25,15 @@
             else {
                 alert('cordova is not accessable');
             }
+
+
+            // Listen to Back Button press event
+            document.addEventListener('backbutton', onBackbutton, false);
+        }
+
+        // Back button is pressed
+        function onBackbutton() {
+            alert(111);
         }
     </script>
     <style>

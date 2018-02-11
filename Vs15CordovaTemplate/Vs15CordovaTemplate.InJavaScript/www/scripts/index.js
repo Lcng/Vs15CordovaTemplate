@@ -33,13 +33,13 @@
         }
     },
     loadApp: function () {
-        var isNetworkValid = app.checkConnection();
-        if (isNetworkValid == true) {
-            window.location.replace('https://www.baidu.com');
-        }
-        else {
+        //var isNetworkValid = app.checkConnection();
+        //if (isNetworkValid == true) {
+        //    window.location.replace('https://www.baidu.com');
+        //}
+        //else {
             window.location.replace('networkInvalid.html');
-        }
+        //}
     },
     checkConnection: function () {
         var networkState = navigator.network.connection.type;
