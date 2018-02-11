@@ -9,6 +9,7 @@
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('backbutton', this.onBackbutton, false);
     },
     // deviceready Event Handler
     //
@@ -16,7 +17,6 @@
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
-        document.addEventListener('backbutton', this.onBackbutton, false);
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
